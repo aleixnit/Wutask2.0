@@ -1,0 +1,1481 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  /* border: 1px solid red; */
+}
+
+/* poner el background autocompletado de los inputs transparente */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+  -webkit-text-fill-color: #fff !important;
+}
+
+:root {
+  --colorOne: #ffcd00;
+  --colorTwo: #000000;
+  --colorThree: rgb(255, 255, 255);
+  /* --fontSize-sm: 16px; */
+  /* --fontFamily: "Arial, Helvetica, sans-serif"; */
+}
+
+body {
+  font-family: 'Montserrat';
+  color: white;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+/* -------------------------------- PRELOADER ------------------------------- */
+/* -------------------------------- PRELOADER ------------------------------- */
+/* -------------------------------- PRELOADER ------------------------------- */
+/* -------------------------------- PRELOADER ------------------------------- */
+/* -------------------------------- PRELOADER ------------------------------- */
+/* -------------------------------- PRELOADER ------------------------------- */
+/* -------------------------------- PRELOADER ------------------------------- */
+/* -------------------------------- PRELOADER ------------------------------- */
+/* -------------------------------- PRELOADER ------------------------------- */
+/* -------------------------------- PRELOADER ------------------------------- */
+/* -------------------------------- PRELOADER ------------------------------- */
+/* -------------------------------- PRELOADER ------------------------------- */
+/* -------------------------------- PRELOADER ------------------------------- */
+/* -------------------------------- PRELOADER ------------------------------- */
+/* -------------------------------- PRELOADER ------------------------------- */
+/* -------------------------------- PRELOADER ------------------------------- */
+/* -------------------------------- PRELOADER ------------------------------- */
+/* -------------------------------- PRELOADER ------------------------------- */
+
+/* ---------------------------- PRELOADER PAGINA ---------------------------- */
+#body {
+  background-color: #000;
+}
+.hiddenloader {
+  /* overflow: hidden; */
+  /* overflow: scroll; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0); /* Fondo semitransparente */
+  z-index: 9999; /* Asegúrate de que el preloader esté en la parte superior */
+}
+
+#onload {
+  /* Otros estilos para el preloader */
+  opacity: 1;
+  transition: opacity 2s ease; /* Duración de la transición y función de temporización */
+}
+
+.centrado {
+height: 100vh;
+background-color: #000;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.spinner {
+  width: 56px;
+  height: 56px;
+  display: grid;
+  border: 4.5px solid #0000;
+  border-radius: 50%;
+  border-color: #dbdcef #0000;
+  animation: spinner-e04l1k 1s infinite linear;
+}
+
+.spinner::before,
+.spinner::after {
+  content: "";
+  grid-area: 1/1;
+  margin: 2.2px;
+  border: inherit;
+  border-radius: 50%;
+}
+
+.spinner::before {
+  border-color: var(--colorOne) #0000;
+  animation: inherit;
+  animation-duration: 0.5s;
+  animation-direction: reverse;
+}
+
+.spinner::after {
+  margin: 8.9px;
+}
+
+@keyframes spinner-e04l1k {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+/* -------------------------- INICIAR SESIÓN PÁGINA ------------------------- */
+/* -------------------------- INICIAR SESIÓN PÁGINA ------------------------- */
+/* -------------------------- INICIAR SESIÓN PÁGINA ------------------------- */
+/* -------------------------- INICIAR SESIÓN PÁGINA ------------------------- */
+/* -------------------------- INICIAR SESIÓN PÁGINA ------------------------- */
+/* -------------------------- INICIAR SESIÓN PÁGINA ------------------------- */
+/* -------------------------- INICIAR SESIÓN PÁGINA ------------------------- */
+/* -------------------------- INICIAR SESIÓN PÁGINA ------------------------- */
+/* -------------------------- INICIAR SESIÓN PÁGINA ------------------------- */
+/* -------------------------- INICIAR SESIÓN PÁGINA ------------------------- */
+/* -------------------------- INICIAR SESIÓN PÁGINA ------------------------- */
+/* -------------------------- INICIAR SESIÓN PÁGINA ------------------------- */
+/* -------------------------- INICIAR SESIÓN PÁGINA ------------------------- */
+/* -------------------------- INICIAR SESIÓN PÁGINA ------------------------- */
+
+
+
+.signin_fondo {
+  background-image: linear-gradient(rgba(57, 56, 53, 0.845), rgba(0, 0, 0, 0.9)),
+    url("../../assets/fondotaskitem2.png");
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.signin_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  width: 50%;
+  padding: 3vw 5.5vw;
+}
+
+.signin_content img {
+  width: 5vw;
+  height: 5vw;
+}
+
+.signin_content h3 {
+  font-size: 2.5rem;
+  margin: 1vw 0vw;
+}
+
+.signin_content p {
+  font-size: 0.9rem;
+  line-height: 1.8rem;
+  margin-bottom: 1vw;
+  width: 60%;
+}
+
+.signin_form_box {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2vw;
+  gap: 3vw;
+}
+
+.signin_form {
+  position: relative;
+  max-height: 200px;
+}
+
+.signin_button_register {
+  text-decoration: none;
+}
+
+.signin_button_register:visited {
+  color: var(--colorOne); /* Establece el color del texto a negro también para los enlaces visitados */
+}
+
+/* ---------------------------- FORMULARIO SIGNIN --------------------------- */
+.signin_input {
+  min-width: 290px;
+  border: none;
+  border-bottom: solid gray 1px;
+  background: transparent;
+  outline: none;
+  padding: 10px;
+  transition: 0.2s;
+  color: #e8e8e8;
+  font-size: 14px;
+  letter-spacing: 3px;
+}
+
+.signin_input:focus , .signin_input:valid {
+  border-color: var(--colorOne);
+}
+
+label span {
+  position: absolute;
+  top: 0px;
+  display: block;
+  transition: 0.2s;
+  pointer-events: none;
+  font-size: 17px;
+  color: gray;
+  opacity: 0%;
+}
+
+.signin_input:focus + label span ,.signin_input:valid + label span {
+  color: rgb(255, 238, 127);
+  top: -17px;
+  opacity: 100%;
+}
+
+.signin_input:focus + label p ,.signin_input:valid + label p {
+  opacity: 0;
+}
+
+/* -------------------------- BOTON INICIAR SESIÓN -------------------------- */
+.signin_button {
+  display: flex;
+  padding: 11px 33px;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+  background: var(--colorOne);
+  transition: 1s;
+  box-shadow: 6px 6px 0 rgb(0, 0, 0);
+  transform: skewX(-15deg);
+  border: none;
+  margin-bottom: 1.1vw;
+}
+
+.signin_button:focus {
+  outline: none;
+}
+
+.signin_button:hover {
+  transition: 0.5s;
+  box-shadow: 10px 10px 0 #ffffff;
+}
+
+.signin_button .signin_button_second {
+  transition: 0.5s;
+  margin-right: 0px;
+}
+
+.signin_button:hover  .signin_button_second {
+  transition: 0.5s;
+  margin-right: 45px;
+}
+
+.signin_button_span {
+  transform: skewX(15deg)
+}
+
+.signin_button_second {
+  width: 20px;
+  margin-left: 30px;
+  position: relative;
+  top: 12%;
+}
+
+.signin_button_one {
+  transition: 0.4s;
+  transform: translateX(-60%);
+}
+
+.signin_button_two {
+  transition: 0.5s;
+  transform: translateX(-30%);
+}
+
+.signin_button:hover .signin_button_three {
+  animation: color_anim 1s infinite 0.2s;
+}
+
+.signin_button:hover .signin_button_one{
+  transform: translateX(0%);
+  animation: color_anim 1s infinite 0.6s;
+}
+
+.signin_button:hover .signin_button_two {
+  transform: translateX(0%);
+  animation: color_anim 1s infinite 0.4s;
+}
+
+@keyframes color_anim {
+  0% {
+    fill: rgb(0, 0, 0);
+  }
+
+  50% {
+    fill: #FBC638;
+  }
+
+  100% {
+    fill: rgb(0, 0, 0);
+  }
+}
+
+/* ------------------------------ BOX 2 SIGN IN ----------------------------- */
+.signin_box2 {
+  position: relative;
+  width: 50%;
+  height: 100vh;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  background-color: #5cfb38;
+  /* background-color: var(--colorOne); */
+}
+
+.video-background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 98%;
+  height: 100vh;
+  overflow: hidden;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+
+.video-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.video-bg:hover {
+  filter: grayscale(0%);
+}
+
+/* ----------------------- MEDIA QUERYS PAGINA SIGN IN ---------------------- */
+@media only screen and (max-width : 900px) {
+  .signin_box2,
+  .video-background {
+    display: none;
+  }
+
+  .signin_content {
+    align-items: center;
+    width: 80%;
+    padding: 3vw 5.5vw;
+  }
+
+  .signin_content img {
+    width: 18vw;
+    height: 18vw;
+  }
+  
+  .signin_content h3 {
+    font-size: 2.5rem;
+    margin: 1.7vw 0vw;
+    text-align: center;
+  }
+  
+  .signin_content p {
+    font-size: 0.9rem;
+    text-align: center;
+    line-height: 1.5rem;
+    margin: 4vw 0vw;
+  width: 90%;
+  }
+  
+  .signin_form_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vw;
+    gap: 8vw;
+  }
+
+  .iniciarRegistro {
+    gap: 1.1vh;
+    display: flex;
+    flex-direction: column;
+}
+
+  }
+
+  @media (max-width: 766px) {
+    .iniciarRegistro {
+      gap: 1vh;
+      display: flex;
+      flex-direction: column!important;
+  }
+  
+  }
+
+
+/* ----------------------------- SIGN UP PAGINA ----------------------------- */
+/* ----------------------------- SIGN UP PAGINA ----------------------------- */
+/* ----------------------------- SIGN UP PAGINA ----------------------------- */
+/* ----------------------------- SIGN UP PAGINA ----------------------------- */
+/* ----------------------------- SIGN UP PAGINA ----------------------------- */
+/* ----------------------------- SIGN UP PAGINA ----------------------------- */
+/* ----------------------------- SIGN UP PAGINA ----------------------------- */
+/* ----------------------------- SIGN UP PAGINA ----------------------------- */
+/* ----------------------------- SIGN UP PAGINA ----------------------------- */
+/* ----------------------------- SIGN UP PAGINA ----------------------------- */
+/* ----------------------------- SIGN UP PAGINA ----------------------------- */
+/* ----------------------------- SIGN UP PAGINA ----------------------------- */
+/* ----------------------------- SIGN UP PAGINA ----------------------------- */
+/* ----------------------------- SIGN UP PAGINA ----------------------------- */
+/* ----------------------------- SIGN UP PAGINA ----------------------------- */
+
+
+
+
+
+/* GENERAL CLASSES ---------------------------------------------------------------------------------------*/
+
+/* body {
+  font-family: "Quicksand";
+}
+h1 {
+  margin-bottom: 7vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 3vw;
+}
+
+h3 {
+  text-align: center;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  margin-top: 2vw;
+  font-family: "Quicksand";
+} */
+
+/* p {
+  text-align: center;
+} */
+
+
+/* BOTONES DEL MENUUUU ----------------------------------------------------------------------------------- */
+
+/*<a class="fancy" href="#">
+              <span class="top-key"></span>
+              <span class="text">Perfil</span>
+              <span class="bottom-key-1"></span>
+              <span class="bottom-key-2"></span>*/
+/*background, borde y ????? */
+.fancy {
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 0;
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 1.25em 2em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  transition: all 0.3s ease-in-out;
+  user-select: none;
+  font-size: 13px;
+}
+
+/*color de la rallita*/
+.fancy::before {
+  content: " ";
+  width: 1.5625rem;
+  height: 2px;
+  background: white;
+  top: 50%;
+  left: 1.5em;
+  position: absolute;
+  transform: translateY(-50%);
+  transform-origin: center;
+  transition: background 0.3s linear, width 0.3s linear;
+}
+
+/*texto del boton */
+.fancy .text {
+  font-size: 1.125em;
+  line-height: 1.33333em;
+  padding-left: 2em;
+  display: block;
+  text-align: left;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+}
+
+/* rallite de arriba */
+.fancy .top-key {
+  height: 2px;
+  width: 1.5625rem;
+  top: -2px;
+  left: 0.625rem;
+  position: absolute;
+  background: #e48970;
+  transition: width 0.5s ease-out, left 0.3s ease-out;
+}
+
+/* rallita grande de abajo */
+.fancy .bottom-key-1 {
+  height: 2px;
+  width: 1.5625rem;
+  right: 1.875rem;
+  bottom: -2px;
+  position: absolute;
+  background: #e48970;
+  transition: width 0.5s ease-out, right 0.3s ease-out;
+}
+
+/*rallita pequeña de abajo */
+.fancy .bottom-key-2 {
+  height: 2px;
+  width: 0.625rem;
+  right: 0.625rem;
+  bottom: -2px;
+  position: absolute;
+  background: #e48970;
+  transition: width 0.5s ease-out, right 0.3s ease-out;
+}
+
+.fancy:hover {
+  color: white;
+  background: linear-gradient(#e8b3a5, #e48970);
+  cursor: crosshair;
+}
+
+.fancy:hover::before {
+  width: 0.9375rem;
+  background: white;
+}
+
+.fancy:hover .text {
+  color: white;
+  padding-left: 1.5em;
+}
+
+.fancy:hover .top-key {
+  left: -2px;
+  width: 0px;
+}
+
+.fancy:hover .bottom-key-1,
+.fancy:hover .bottom-key-2 {
+  right: 0;
+  width: 0;
+}
+
+/* card task----------------------------------------------------------------------------------------------*/
+.card {
+  width: 25vw;
+  height: auto;
+  background-image: linear-gradient(163deg, #5c5e5f 0%, #e11818 100%);
+  border-radius: 20px;
+  transition: all 0.3s;
+  /* opacity: 80%; */
+}
+.card2 {
+  width: 25vw;
+  height: auto;
+  background: linear-gradient(145deg, #ffffff, #e6b3a5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+  transition: all 0.2s;
+  /* opacity: 80%; */
+}
+
+.card2 h3 {
+  font-weight: 600;
+}
+.card2 p {
+  padding-left: 2vw;
+  padding-right: 2vw;
+  font-weight: 300;
+}
+.card2:hover {
+  transform: scale(0.98);
+  border-radius: 20px;
+}
+.card:hover {
+  box-shadow: 0px 0px 30px 1px rgba(230, 159, 250, 0.3);
+}
+
+/* NAVBAR COMPONENT --------------------------------------------------------------------------------------- */
+nav {
+  background-color: transparent;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 5vh;
+  padding-bottom: 15vh;
+  position: relative;
+  z-index: 2;
+  font-size: 1.3vw;
+  font-weight: bold;
+}
+
+nav a {
+  text-decoration: none;
+}
+nav ul {
+  list-style: none;
+  /* padding-inline-start: 0; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+}
+
+.navbar-img {
+  width: 7vw;
+  border-radius: 0%;
+}
+
+.links-visitados:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+.gradient-text {
+  background-image: linear-gradient(to left, #efdfdf, #e48970);
+  -webkit-background-clip: text; /* Prefijo necesario para que funcione en Chrome */
+  background-clip: text;
+  color: transparent;
+}
+
+.log-out ul {
+  display: flex;
+  flex-direction: row;
+  gap: 3vw;
+}
+
+.log-out ul li p {
+  font-size: 0.9vw;
+}
+
+/* SignIn Component -------------------------------------------------------------------------------------- */
+/* .fondo {
+  background-image: linear-gradient(rgba(23, 0, 0, 0.8), rgba(0, 0, 0, 0.9)),
+    url("../../assets/fondotaskitem2.png");
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: fondoAnimadoNewTask2 40s ease 0s infinite alternate forwards;
+}
+
+@keyframes fondoAnimadoNewTask2 {
+  0% {
+    background-position: left center;
+    background-size: 100%;
+  }
+
+  100% {
+    background-position: left center;
+    background-size: 130%;
+  }
+} */
+
+/* .loginpage {
+  background: rgba(250, 189, 115, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 65vh;
+  width: 60vw;
+} */
+
+/* .loginpage img {
+  border-radius: 0;
+  width: 10vw;
+} */
+
+.loginpage h3 {
+  /* font-size: 3vw;
+  margin-top: 2vw;
+  margin-bottom: 1vw;
+  color: #e8b3a5; */
+  /* background: linear-gradient( #e8b3a5, #e48970); */
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5vw; */
+  /* font-family: "Rampart One"; */
+  /* letter-spacing: 0.5vw; */
+}
+
+/* .loginpage p {
+  color: white;
+}
+.refactClass {
+  margin-bottom: 3vw;
+  color: white;
+  font-size: 1.5vw;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.iniciarRegistro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5vh;
+}
+
+.sign-up-link {
+  text-decoration: none;
+  color: #ffffff;
+  background: linear-gradient(#e8b3a5, #e48970);
+  cursor: crosshair;
+  padding: 1vw;
+  margin-left: 2vw;
+} */
+
+/* SignUp Component -------------------------------------------------------------------------------------*/
+
+/* NEW TASK COMPONENT ----------------------------------------------------------------------------------- */
+@keyframes fondoAnimadoNewTask {
+  0% {
+    background-position: left center;
+    background-size: 100%;
+  }
+
+  100% {
+    background-position: left center;
+    background-size: 110%;
+  }
+}
+
+.container-task {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+  height: 90vh;
+  width: 100%;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  background-image: url("../../assets/fondoIntro.png");
+  background-attachment: fixed;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  animation: fondoAnimadoNewTask 15s ease 0s infinite alternate forwards;
+}
+
+.div1 {
+  width: 60%;
+  /* border: solid 1px red; */
+  color: #ffffff;
+  text-align: center;
+  padding-top: 3vh;
+  font-family: "Quicksand";
+}
+
+.error-text1 {
+  font-size: 0.8vw;
+  background: linear-gradient(#e8b3a5, #e48970);
+  text-shadow: -2px 2px 6px rgba(0, 0, 0, 0.55);
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  margin-top: 3vh;
+  animation: none;
+}
+
+.underlined-text {
+  background-image: linear-gradient(to left, #ebc3b8, #e48970);
+  background-size: 100% 0.4vw; /* Establece el tamaño del subrayado */
+  background-position: 0 95%; /* Establece la posición del subrayado */
+  background-repeat: no-repeat; /* Evita que se repita el subrayado */
+  border-radius: 1vw;
+}
+
+.div1 p {
+  line-height: 3, 5vh;
+  font-size: 1.3vw;
+  font-style: italic;
+  text-shadow: -2px 2px 6px rgba(0, 0, 0, 0.55);
+  animation: myAni 3s ease 0s 1 normal both;
+  font-family: "Quicksand";
+}
+
+.div2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2vw;
+  margin-top: 1.5vw;
+  margin-bottom: 1vw;
+  /* border: solid 1px red; */
+  /* border: solid 1px red; */
+}
+
+@keyframes myAni {
+  0% {
+    opacity: 0;
+    transform: scale(1.4);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.container-task h1 {
+  margin-top: 5vw;
+  display: flex;
+  flex-direction: column;
+  text-shadow: -2px 2px 6px rgba(0, 0, 0, 0.55);
+  animation: myAni 3s ease 0s 1 normal both;
+}
+
+/* TASK ITEM COMPONENT ----------------------------------------------------------------------------------*/
+
+.done {
+  /* color: green; */
+  text-decoration: line-through;
+}
+.pending {
+  /* color: red; */
+  text-decoration: none;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  padding-bottom: 2vw;
+  position: relative;
+  transition: all 0.3s ease-out;
+}
+
+.buttons img {
+  width: 4vw;
+  border-radius: 50%;
+}
+
+.botton1,
+.botton2,
+.botton3 {
+  border: none;
+  cursor: crosshair;
+  background-color: transparent;
+}
+
+/* .botton1:hover img {
+  content: url("../../assets/TaskItem_Botons/complete_green.png");
+} */
+
+.alerta-borrar {
+  width: 50%;
+  height: 50%;
+}
+
+@keyframes fondoAnimadoNewTask1 {
+  0% {
+    background-position: left center;
+    background-size: 100%;
+  }
+
+  100% {
+    background-position: left center;
+    background-size: 130%;
+  }
+}
+/* Esta linea es las cajitas de las task */
+.boxflex {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  gap: 2vw;
+  height: auto;
+  background-image: url("../../assets/fondotaskitem2.png");
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 85vh;
+  padding-bottom: 15vh;
+  animation: fondoAnimadoNewTask1 25s ease 0s infinite alternate forwards;
+}
+/* SignUp Component -------------------------------------------------------------------------------------*/
+
+/* Home view --------------------------------------------------------------------------------------------*/
+
+/* Account View --------------------------------------------------------------------------------------------*/
+img {
+  width: 200px;
+}
+
+.fondoperfil {
+  background-color: rgb(255, 255, 255);
+}
+
+/* FOOTER COMPONENT --------------------------------------------------------------------------------------- */
+.footer {
+  width: 100%;
+  height: 15vh;
+  background-image: url("../../assets/AdobeStock_234342732.jpeg");
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(253, 218, 196);
+  padding-bottom: 5vh;
+  padding-top: 5vh;
+}
+
+.footer img {
+  width: 5vw;
+  border-radius: 0%;
+  margin-bottom: 1vw;
+}
+
+/*----------------------------------------------------------------------------------------------*/
+/* ------------------------- Smaller than 766px (mobile) ------------------------- */
+@media (max-width: 766px) {
+  /* BUTONS MOBILE--------------------------------------------------------------------*/
+
+  /*INPUTS MOBILE --------------------------------------------------------------------*/
+
+  .inputSignin {
+    padding-bottom: 8vh;
+    padding-top: 0vh;
+    position: relative;
+  }
+
+  .input {
+    font-size: 16px;
+    padding: 15px 10px 10px 5px;
+    color: #ffbfad;
+    text-shadow: 4px 1px 7px rgb(0, 0, 0);
+    display: block;
+    width: 48vw;
+    border: none;
+    border-bottom: 1px solid #e48970;
+    background: transparent;
+  }
+
+  .input:focus {
+    outline: none;
+    color: #e48970;
+    background: transparent;
+  }
+
+  label {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+  }
+
+  .input:focus ~ label,
+  .input:valid ~ label {
+    top: -10px;
+    font-size: 4vw;
+    color: #ffffff;
+  }
+
+  .bar {
+    position: relative;
+    display: block;
+    width: 200px;
+  }
+
+  .bar:before,
+  .bar:after {
+    content: "";
+    height: 2px;
+    width: 0%;
+    left: 0vw;
+    bottom: 1px;
+    position: absolute;
+    background: linear-gradient(to left, #e8b3a5, #e48970);
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+  }
+
+  .bar:before {
+    left: 50%;
+  }
+
+  .bar:after {
+    right: 50%;
+  }
+
+  .input:focus ~ .bar:before,
+  .input:focus ~ .bar:after {
+    width: 42.5vw;
+  }
+
+  .highlight {
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+  }
+
+  .input:focus ~ .highlight {
+    animation: inputHighlighter 0.3s ease;
+  }
+
+  @keyframes inputHighlighter {
+    from {
+      width: 50vw;
+      height: 3.5vh;
+      background: #e48970;
+    }
+
+    to {
+      width: 0;
+      height: 3.5vh;
+      background: transparent;
+    }
+  }
+
+  .animation1 {
+    animation: TituloTarea 2s ease 2s 1 normal forwards;
+  }
+  @keyframes TituloTarea {
+    0% {
+      transform: scale(1);
+    }
+
+    50% {
+      transform: scale(1.4);
+    }
+
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .animation2 {
+    animation: DescripciónTarea 2s ease 3s 1 normal forwards;
+  }
+  @keyframes DescripciónTarea {
+    0% {
+      transform: scale(1);
+    }
+
+    50% {
+      transform: scale(1.4);
+    }
+
+    100% {
+      transform: scale(1);
+    }
+  }
+  /* SIGN IN---------------------------------------------------------------------------------------------------------------*/
+  .fondo {
+    background-image: linear-gradient(rgba(58, 24, 3, 0.7), rgba(0, 0, 0, 0.9)),
+      url("../../assets/fondotaskitem_mobile.png");
+  }
+
+  @keyframes fondoAnimadoNewTask2 {
+    0% {
+      background-size: 180%;
+    }
+
+    100% {
+      background-size: 220%;
+    }
+  }
+
+  .loginpage {
+    justify-content: space-around;
+    width: 80vw;
+  }
+
+  .loginpage img {
+    width: 25vw;
+  }
+
+  .loginpage h3 {
+    font-size: 6vw;
+    margin-top: 3vh;
+    margin-bottom: 0vh;
+  }
+
+  .loginpage p {
+    color: white;
+    font-size: 4vw;
+    margin-bottom: 8vw;
+    margin-top: 8vw;
+  }
+
+  .iniciarRegistro {
+    gap: 1vh;
+  }
+  .refactClass {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  /* SIGN UP COMPONENT MOBILE --------------------------------------------------------------------*/
+  .container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(58, 24, 3, 0.7), rgba(0, 0, 0, 0.9)),
+      url("../../assets/fondotaskitem_mobile.png");
+    background-size: cover;
+    color: white;
+    animation: fondoAnimadoNewTask2 40s ease 0s infinite alternate forwards;
+  }
+
+  .container h3 {
+    font-size: 6vw;
+    margin-bottom: 2vw;
+    color: #e8b3a5;
+  }
+
+  .button-signup {
+    margin-bottom: 6vw;
+    margin-top: 2vw;
+  }
+
+  .container img {
+    width: 25vw;
+    border-radius: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .form p {
+    margin-top: 2vw;
+  }
+
+  /*NAVBAR COMPONENT MOBILE --------------------------------------------------------------------*/
+  .navbar-img {
+    width: 20vw;
+    position: absolute;
+    top: 4vh;
+    left: 4vh;
+  }
+
+  .links-visitados {
+    display: none;
+  }
+
+  .log-out p {
+    display: none;
+  }
+
+  .fancy {
+    margin-bottom: -8vh;
+    margin-top: 2vw;
+  }
+
+  /*NEW TASK COMPONENT MOBILE --------------------------------------------------------------------*/
+  @keyframes fondoAnimadoNewTask {
+    0% {
+      background-size: 160%;
+    }
+
+    100% {
+      background-size: 200%;
+    }
+  }
+
+  .container-task {
+    background-image: url("../../assets/fondoIntro-mobile.png");
+    animation: fondoAnimadoNewTask 25s ease 0s infinite alternate forwards;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    height: 90vh;
+    width: 100%;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    background-attachment: fixed;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+  }
+
+  .div1 {
+    padding-top: 0vh;
+    width: 60%;
+    /* border: solid 1px red; */
+    color: #ffffff;
+    text-align: center;
+    font-family: "Quicksand";
+  }
+
+  .div1 h1 {
+    font-size: 7vw;
+    margin-bottom: 2vh;
+  }
+
+  .div1 p {
+    line-height: 3, 5vh;
+    font-size: 3.9vw;
+    font-style: italic;
+    text-shadow: -2px 2px 6px rgba(0, 0, 0, 0.55);
+    animation: myAni 3s ease 0s 1 normal both;
+    font-family: "Quicksand";
+  }
+
+  .div2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2vw;
+    margin-top: 1.5vw;
+    margin-bottom: 1vw;
+    /* border: solid 1px red; */
+    /* border: solid 1px red; */
+  }
+
+  @keyframes myAni {
+    0% {
+      opacity: 0;
+      transform: scale(1.4);
+    }
+
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  .error-text {
+    font-size: 0.8vw;
+    background: linear-gradient(#e8b3a5, #e48970);
+    border-radius: 2vw;
+    text-shadow: -2px 2px 6px rgba(0, 0, 0, 0.55);
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    margin-top: 3vh;
+  }
+
+  /*TASK ITEM COMPONENT MOBILE --------------------------------------------------------------------*/
+  .boxflex {
+    gap: 4vh;
+    padding-bottom: 5vh;
+    background-image: url("../../assets/fondotaskitem_mobile.png");
+  }
+
+  .card2 h3,
+  p {
+    margin-left: 6vw;
+    margin-right: 6vw;
+    margin-top: 3vh;
+  }
+
+  .card,
+  .card2 {
+    width: 80vw;
+    height: auto;
+  }
+
+  .buttons {
+    gap: 5vw;
+  }
+
+  .buttons img {
+    width: 14vw;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+  }
+
+  @keyframes fondoAnimadoNewTask {
+    0% {
+      background-position: left center;
+      background-size: 200%;
+    }
+
+    100% {
+      background-position: left center;
+      background-size: 230%;
+    }
+  }
+
+  /* MODAL DEL DELETE EN RESPONSIVE --------------------------------------------------------------------------------------- */
+  .modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    background: linear-gradient(145deg, #ffffff, #e6b3a5);
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+    color: white;
+    animation: fade-in 0.5s forwards, modal-grow 0.5s forwards;
+  }
+
+  @keyframes modal-grow {
+    from {
+      transform: translate(-50%, -50%) scale(0.8);
+    }
+    to {
+      transform: translate(-50%, -50%) scale(1);
+    }
+  }
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .warning {
+    width: 25vw;
+  }
+
+  .aviso-modal {
+    z-index: 1;
+    background-color: #00000080;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  .button8 {
+    position: relative;
+    overflow: hidden;
+    height: 3rem;
+    padding: 0 2rem;
+    border-radius: 1.5rem;
+    background: #3d3a4e;
+    background-size: 400%;
+    color: #fff;
+  }
+
+  .button8:hover::before {
+    transform: scaleX(1);
+  }
+
+  .button8-content {
+    position: relative;
+    z-index: 1;
+  }
+
+  .button8::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    width: 100%;
+    height: inherit;
+    border-radius: inherit;
+    background: linear-gradient(
+      82.3deg,
+      rgb(233, 168, 93) 10.8%,
+      rgb(228, 123, 52) 94.3%
+    );
+    transition: all 0.475s;
+  }
+
+  .buttons-modal {
+    display: flex;
+    gap: 2vw;
+  }
+
+  .columns-modal {
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+  }
+
+  .columns-modal h2 {
+    color: #3d3a4e;
+  }
+
+  .container-edit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .botton1:hover {
+    background-image: url("../../assets/vecteezy_check-mark-icon-sign-symbol-design_10141449_805.png");
+  }
+
+  /* SCROLL TO TOP RESPONSIVE COMPONENT --------------------------------------------------------------------------------------- */
+
+  .scroll-to-top {
+    height: 9.5vh;
+    background-image: linear-gradient(
+        rgb(232, 179, 165, 0.7),
+        rgba(242, 71, 24, 0.5)
+      ),
+      url("../../assets/fondotaskitem2.png");
+    background-size: cover;
+    background-attachment: fixed;
+    padding-left: 24.5vw;
+    padding-top: 2.3vw;
+    padding-bottom: 0.3vw;
+  }
+
+  /* FOOTER COMPONENT --------------------------------------------------------------------------------------- */
+  .footer {
+    font-size: 4vw;
+    padding-bottom: 13vh;
+    padding-top: 10vh;
+    width: 100%;
+  }
+
+  .footer img {
+    width: 20vw;
+  }
+}
